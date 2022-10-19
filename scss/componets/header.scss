@@ -1,0 +1,40 @@
+
+header {
+    background-color: $color-negro;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Kanit';
+    img{
+        width: 100px;
+        height: 100px; }
+    nav{
+        ul {
+                list-style: none;
+                display: flex; 
+            li {
+                margin: 20px;
+                display: flex; 
+                a {
+                    text-decoration: none;
+                    color: $color-blanco;
+                    font-size: 20px;
+                    font-weight: 400;
+                    transition: 2s; 
+                &:hover {
+                            text-decoration: overline;
+                            color: $color-azul-oscuro;
+                        }
+                    }
+                }
+            } 
+        } 
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
