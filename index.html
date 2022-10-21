@@ -3,44 +3,258 @@
 <!--seo y configuracion-->
 
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <meta description="Pizza a la Piedra, mas de 100 sabores de empanadas y pizzas a la piedra">
-        <meta property="og:type" content="web site">
-        <meta property="og:title" content="piedra libre, pizzas y empanadas a la piedra">
-        <meta property="og:url" content="https://www.piedralibre.com">
-        <meta property="og:url" content=".">
-        <meta property="og:description" content="Pizza y empanadas a la piedra">
-        <meta name="Keywords"
-            content="Pizza a la piedra, empanadas a la piedra, pizzas, empanadas, fugazza, calzones, fugazzetta rellena, faina, medallones, muzzarella, fugazzetta ">
-        <link rel="shortcut icon" href="./img/favicon-pl.ico" type="image/x-icon">
-        <title>Piedra Libre, pizzas y empanadas</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta description="Pizza a la Piedra, mas de 100 sabores de empanadas y pizzas a la piedra">
+    <meta property="og:type" content="web site">
+    <meta property="og:title" content="piedra libre, pizzas y empanadas a la piedra">
+    <meta property="og:url" content="https://www.piedralibre.com">
+    <meta property="og:url" content=".">
+    <meta property="og:description" content="Pizza y empanadas a la piedra">
+    <meta name="Keywords"
+        content="Pizza a la piedra, empanadas a la piedra, pizzas, empanadas, fugazza, calzones, fugazzetta rellena, faina, medallones, muzzarella, fugazzetta ">
+    <link rel="shortcut icon" href="./img/favicon-pl.ico" type="image/x-icon">
+    <title>Piedra Libre, pizzas y empanadas</title>
 </head>
 
 <body>
     <!--menu/nav-->
     <header>
         <nav>
-            <img class="logo" src="./img/pl-logoo.png" alt="logo-dantat">
+            <img class="logo" src="./img/pl-logoo.png" alt="logo-piedralibre">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="./pages/pedidos.html">PEDIR PIZZA</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/galeria.html">Galeria</a>
-                </li>
-            </ul>
         </nav>
     </header>
-    
+
+    <main>
+        <!--------------------------------------------------HERO---------------------------------------->
+        <section class="hero">
+            <div>
+
+                <h1 class="animate__animated animate__zoomInDown">Piedra Libre</h1>
+                <p>Pizzas y empanadas a la piedra</p>
+                <a href="./pages/pedidos.html" target="_blank" rel="noopener noreferrer">ENCARGA TU PIZZA</a>
+            </div>
+        </section>
+
+        <!-------------------------------------------CARD SECTION------------------------------------------------->
+        <section class="servicios">
+            <div>
+                <div>
+                    <img src="./img/pizza.png" alt="pizza">
+                    <h3>Pizza</h3>
+                    <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">ENCARGA TU PIZZA </a>
+                </div>
+                <div>
+                    <img src="./img/pizza.png" alt="pizza">
+                    <h3>Pizza</h3>
+                    <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">ENCARGA TU PIZZA </a>
+                </div>
+                <div>
+                    <img src="./img/pizza.png" alt="pizza">
+                    <h3>Pizza</h3>
+                    <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">ENCARGA TU PIZZA </a>
+                </div>
+                <div>
+                    <img src="./img/pizza.png" alt="pizza">
+                    <h3>Pizza</h3>
+                    <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">ENCARGA TU PIZZA </a>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <!----------------------------------------------SECTION HERO 2--------------------------------------------->
+        <section class="segunda-img-movida">
+            <div>
+                <h2>RESERVA TU EVENTO</h2>
+                <h3>COMPLETA EL FORMULARIO AQUI ABAJO</h3>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"> <img
+                        src="./img/whatsapp.png" alt="">
+                </a>
+            </div>
+        </section>
+
+        <!------------------------------------------------FORM-------------------------------------------------->
+        <section>
+            <div class="container">
+                <form action="action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Nombre</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="Nombre" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Mail</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="mail" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Asunto del evento</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="asunto" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Mensaje</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="Mensaje" placeholder="" style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!---------------------------------------------BOTON WHATSAPP----------------------------------------------->
+        <section class="botton-fixed">
+            <div>
+                <a href="./pages/pedidos.html" target="_blank" rel="noopener noreferrer"><img src="./img/delivery.png"
+                        alt="whatsapp">
+                </a>
+        </section>
+        <section class="menu-pl" >
+            <h2>Pizzas</h2>
+            <dl>
+                <dt>Muzzarella</dt>
+                <dd class="price">$1400</dd>
+                <dd class="ingredients">Salsa, muzzarrrella y oregano.</dd>
+            </dl>
+
+            <dl>
+                <dt>Fugazzetta</dt>
+                <dd class="price">$1600</dd>
+                <dd class="ingredients">Cebolla, muzzarella y oregano.</dd>
+            </dl>
+            <dl>
+                <dt>Calabresa</dt>
+                <dd class="price">$1800</dd>
+                <dd class="ingredients">Salsa, muzzarella, longaniza y morrones.</dd>
+            </dl>
+            <dl>
+                <dt>Champignon</dt>
+                <dd class="price">$1900</dd>
+                <dd class="ingredients">Salsa, muzzarella y champignon.</dd>
+            </dl>
+            <dl>
+                <dt>Crudo y rucula</dt>
+                <dd class="price">$2000</dd>
+                <dd class="ingredients">Salsa, muzzarella, jamon crudo y hojas de rucula.</dd>
+            </dl>
+            <dl>
+                <dt>Provolone</dt>
+                <dd class="price">$1800</dd>
+                <dd class="ingredients">Salsa, muzzarella y provolone.</dd>
+            </dl>
+            <dl>
+                <dt>Cuatro Quesos</dt>
+                <dd class="price">$2100</dd>
+                <dd class="ingredients">Salsa, muzzarella, provolone, fontina y roquefort.</dd>
+            </dl>
+            <dl>
+                <dt>Roquefort</dt>
+                <dd class="price">$2000</dd>
+                <dd class="ingredients">Salsa, muzzarella y roquefort.</dd>
+            </dl>
+            <dl>
+                <dt>Jamon con morrones</dt>
+                <dd class="price">$1850</dd>
+                <dd class="ingredients">Salsa, muzzarella, jamon y morrones.</dd>
+            </dl>
+            <dl>
+                <dt>Huevo</dt>
+                <dd class="price">$1800</dd>
+                <dd class="ingredients">Salsa, muzzarella y huevo.</dd>
+            </dl>
+            <dl>
+                <dt>Napolitana</dt>
+                <dd class="price">$1900</dd>
+                <dd class="ingredients">Salsa, muzzarella, tomate, ajo y provolone.</dd>
+            </dl>
+            <dl>
+                <dt>Palmitos</dt>
+                <dd class="price">$2200</dd>
+                <dd class="ingredients">Salsa, muzzarella, palmitos y salsa golf.</dd>
+            </dl>
+            <dl>
+                <dt>Acelga</dt>
+                <dd class="price">$2000</dd>
+                <dd class="ingredients">Salsa, muzzarella y huevo.</dd>
+            </dl>
+            <dl>
+                <dt>Panceta</dt>
+                <dd class="price">$2100</dd>
+                <dd class="ingredients">Salsa, muzzarella, panceta y huevo frito.</dd>
+            </dl>
+            <dl>
+                <dt>Australiana</dt>
+                <dd class="price">$2100</dd>
+                <dd class="ingredients">Salsa, muzzarella, panceta y huevo frito.</dd>
+            </dl>
+            <dl>
+                <dt>Siciliana</dt>
+                <dd class="price">$2200</dd>
+                <dd class="ingredients">Salsa, muzzarella, jamon, morron y aji.</dd>
+            </dl>
+            <dl>
+                <dt>Pomodoro</dt>
+                <dd class="price">$2300</dd>
+                <dd class="ingredients">Salsa, muzzarella, tomate, huevo y perejil.</dd>
+            </dl>
+            <dl>
+                <dt>Americana</dt>
+                <dd class="price">$2300</dd>
+                <dd class="ingredients">Salsa, muzzarella, palmitos, huevo y salsa golf.</dd>
+            </dl>
+            <dl>
+                <dt>Carne</dt>
+                <dd class="price">$2500</dd>
+                <dd class="ingredients">Salsa, muzzarella, carne picada, cebolla, morron y champignones.</dd>
+            </dl>
+            <dl>
+                <dt>Pollo</dt>
+                <dd class="price">$2500</dd>
+                <dd class="ingredients">Salsa, muzzarella, pollo, huevo y morron.</dd>
+            </dl>
+
+
+
+        </section>
+
+        <!----------------------------------------------GOOGLE MAPS------------------------------------------->
+        <section>
+            <div class="map-responsive">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52596.844409000514!2d-58.59208591721156!3d-34.520556240695555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcba00197d5fa1%3A0x748ef429bf88f905!2sPiedra%20Libre!5e0!3m2!1ses!2sar!4v1666286125758!5m2!1ses!2sar"
+                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" width="100%" height="60%" style="border:0;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
