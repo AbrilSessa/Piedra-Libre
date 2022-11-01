@@ -412,7 +412,7 @@ input[type=submit] {
 .menu-pl dt {
         float: left;
         padding-right: 15px;
-        color: #F70000
+        color: #2b0bbd
     }
 
 .menu-pl dd {
@@ -456,7 +456,7 @@ input[type=submit] {
     height: 100px;
 }
 
-.pizza-selection {
+.pizza-selection{
     display: flex;
 }
 

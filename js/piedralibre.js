@@ -2,17 +2,38 @@ console.log("Bienvenido a Piedra Libre");
 
 let lista_productos = [];
 
+class Producto{
+    constructor(nombre,precio,stock){
+
+        this.nombre = nombre;
+        this.precio = precio;
+        this.stock = stock;
+    }
+    get_datos(){
+        console.log("<----------------------->")
+        console.log("Nombre: " , this.nombre);
+        console.log("Precio: ", this.precio);
+        console.log("");
+    }
+
+    get_stock(){
+
+    }
+
+
+}
+
 for(let i=0 ; i < 2 ; i++){
-    let nombre = prompt("Ingrese el nombre de la pizza");
-    let precio = prompt("Ingrese el precio de la pizza");
-    let stock = prompt("Ingrese la cantidad");
+    let nombre = prompt("Ingrese el nombre de la/las pizza/pizzas");
+    let precio = prompt("Ingrese el precio total");
+    let stock = prompt("Ingrese la cantidad de unidades");
     let producto = new Producto( nombre , precio, stock);
 
     lista_productos.push(producto);
 
 }
 
-let monto = parseFloat(prompt("Ingrese su monto a pagar"));
+let monto = parseFloat(prompt("Ingrese el monto total"));
 let cuotas = parseFloat(prompt("Seleccione en cuantas cuotas quiere pagar 1-2-3-4"));
 
 calcular_interes ( monto , cuotas );
@@ -48,3 +69,4 @@ function calcular_interes ( monto , cuotas ){
 console.log ("Solicitaste: ", monto , " $");
 console.log ("En " , cuotas , "cuotas");
 console.log("El total del servicio es de: " , calcular_interes( monto , cuotas ));
+
