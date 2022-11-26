@@ -1,81 +1,83 @@
-console.log("Bienvenido a Piedra Libre");
+//getElementById//
 
-let lista_productos = [];
+let titulo = document.getElementById("titulo");
 
-class Producto{
-    constructor(nombre,precio,stock){
+console.log(titulo);
+//console.log(titulo.innerText);
 
-        this.nombre = nombre;
-        this.precio = precio;
-        this.stock = stock;
-    }
-    get_datos(){
-        console.log("<----------------------->")
-        console.log("Nombre: " , this.nombre);
-        console.log("Precio: ", this.precio);
-        console.log("");
-    }
+//titulo.innertext = "PEDI TU PIZZA A LA PIEDA";
 
-    get_stock(){
 
-    }
+// getElementsByClassName
 
+let parrafos = document.getElementsByClassName("parrafos");
+
+console.log(parrafos);
+
+console.log(parrafos[0]);
+//console.log(parrafos[0].innerText);
+
+
+
+
+let contenedor = document.getElementById("contenedor");
+console.log(contenedor);
+
+
+//contenedor.innerHTML = "<p>NUESTRO MENU</p>";
+//contenedor.className = "fondo_verde";
+
+
+// createElement
+
+let parrafo_js = document.createElement("p");
+parrafo_js.innerText = "Nuestro Menu";
+parrafo_js.className = "parrafo_rojo";
+parrafo_js.style.fontSize = "40px";
+parrafo_js.style.textAlign = "center";
+parrafo_js.style.fontFamily = "Verdana";
+
+
+
+//FORM
+
+let arreglo_de_usuarios = [];
+
+function set_data() {
+
+
+    let nombre_usuario = document.getElementById("nombre_usuario");
+    let numero_usuario = document.getElementById("numero_usuario");
+
+
+    let usuario = { nombre: nombre_usuario.value, numero: numero_usuario.value };
+
+    arreglo_de_usuarios.push(usuario);
+
+    let arreglo_JSON = JSON.stringify(arreglo_de_usuarios);
+
+
+
+    localStorage.setItem("arreglo_de_usuarios", arreglo_JSON);
+
+
+    let recuperando = localStorage.getItem("arreglo_de_usuarios");
+
+    console.log(recuperando);
+
+    recuperando = JSON.parse(recuperando);
+
+    console.log(recuperando);
 
 }
 
-for(let i=0 ; i < 2 ; i++){
-    let nombre = prompt("Ingrese el nombre de la/las pizza/pizzas");
-    let precio = prompt("Ingrese el precio total");
-    let stock = prompt("Ingrese la cantidad de unidades");
-    let producto = new Producto( nombre , precio, stock);
 
-    lista_productos.push(producto);
+let boton = document.getElementById("boton");
 
-}
-
-let monto = parseFloat(prompt("Ingrese el monto total"));
-let cuotas = parseFloat(prompt("Seleccione en cuantas cuotas quiere pagar 1-2-3-4"));
-
-calcular_interes ( monto , cuotas );
+boton.addEventListener("click", set_data);
 
 
-function calcular_interes ( monto , cuotas ){
-    let interes;
-    if (cuotas == 1){
-        interes = monto * 0,15;
-        monto = monto + interes;
-        return monto
-    }
-    else if (cuotas == 2){
-        interes = monto * 0,35;
-        monto = monto + interes;
-        return monto
-    }
-    else if (cuotas == 3){
-        interes = monto * 0,65;
-        monto = monto + interes;
-        return monto
-    }
-    else if (cuotas == 4){
-        interes == monto * 0,95;
-        monto = monto + interes;
-        return monto
-    }
-    else {
-        console.log ("Cuota incorrecta");
-    }
-}
-
-console.log ("Solicitaste: ", monto , " $");
-console.log ("En " , cuotas , "cuotas");
-console.log("El total del servicio es de: " , calcular_interes( monto , cuotas ));
-
-
-
-
-
-
-
+//Carrito
 let carrito = [];
 
 let btn_compra = document.querySelectorAll(".botonCompra");
@@ -98,12 +100,6 @@ function agregar_a_carrito(e) {
     let padre = hijo.parentNode;
     let abuelo = padre.parentNode;
 
-
-    /*
-    console.log( hijo);
-    console.log( padre);
-    console.log( abuelo);
-    */
 
     let nombre_producto = padre.querySelector("h5").textContent;
     let precio_producto = padre.querySelector("span").textContent;
